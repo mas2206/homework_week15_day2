@@ -1,6 +1,6 @@
 class AccountsController < ApplicationController
 
-  http_basic_authenticate_with name: "me", password: "password"
+  before_action :authenticate_user!
 
   def index
     accounts = [

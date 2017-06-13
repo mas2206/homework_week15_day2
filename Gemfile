@@ -26,6 +26,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # tell the app to respond to requests globally with JSON
 gem 'responders', '~> 2.0'
 
+# install devise
+gem 'devise'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
