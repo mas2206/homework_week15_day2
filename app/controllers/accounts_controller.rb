@@ -1,5 +1,7 @@
 class AccountsController < ApplicationController
 
+  http_basic_authenticate_with name: "me", password: "password"
+
   def index
     accounts = [
       {
