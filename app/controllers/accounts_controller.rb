@@ -3,18 +3,9 @@ class AccountsController < ApplicationController
   before_action :authenticate_user!
 
   def index
-    accounts = [
-      {
-        name: "offshore",
-        amount: 1000000
-      },
-      {
-        name: "local",
-        amount: 1
-      }
-    ]
+    @accounts = current_user.accounts
 
-    render :json => accounts
+    render({json: @accounts})
   end
 
 end
